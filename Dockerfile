@@ -8,20 +8,10 @@ services:
     networks:
       - app-net
 
-  iotd:
-    image: diamol/ch09-image-of-the-day
+  tdl:
+    image: diamol/ch06-todo-list-v2
     ports:
       - "8011:80"
-    networks:
-      - app-net
-
-  image-gallery:
-    image: diamol/ch09-image-gallery
-    ports:
-      - "8010:80"
-    depends_on:
-      - accesslog
-      - iotd
     networks:
       - app-net
 
