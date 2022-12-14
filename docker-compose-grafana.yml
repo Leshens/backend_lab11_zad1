@@ -9,7 +9,7 @@ services:
       - app-net
 
   tdl:
-    image: diamol/ch09-todo-list-v2
+    image: diamol/ch09-todo-list
     ports:
       - "8011:80"
     networks:
